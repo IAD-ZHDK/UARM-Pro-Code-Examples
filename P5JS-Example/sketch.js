@@ -60,6 +60,12 @@ function keyReleased() {
 }
 
 function setPolarPosition(st = s, ro = r, he = h, spd = speed) {
+         /*  Polar coordinates, S is
+        stretch(mm), R is
+        rotation(degree),H is
+        height(mm), F is
+        speed(mm/min
+        */
     console.log(`G2201 S${st} R${ro} H${he} F${spd}`);
     serial.writeLine(`G2201 S${st} R${ro} H${he} F${spd}`);
     return false;
